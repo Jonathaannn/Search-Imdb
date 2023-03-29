@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body{
+    font-family: 'Bebas Neue', 'Montserrat', Helvetica;
+    font-size: 16px;
+    background-color: #323240;
+}
+.wallpaper{
+    background-image: url('../imgs/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input:focus {
+    outline: none;
+}
+input::placeholder {
+    color: #ffffff;
+}
+.gradiente {
+    height: 100%;
+    background: linear-gradient(180deg, rgb(50, 50, 64) 20%, rgba(155, 155, 155, 0));
+}
+.h1-home{
+    color: #DCF235;
+    font-size:4rem;
+}
+.p-home{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.btn-custom {
+    background-color: #DCF235;
+    border: none;
+    height: 55px;
+    width: 55px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.btn-custom:hover{
+    transition: all 0.3s ease;
+    box-shadow: 0 0 7px #bbce2d;
+}
+.btn-custom img{
+    width: 40px;
+}
+.input-custom {
+    height: 55px;
+    width: 69%;
+    padding: 10px;
+    border: 2px solid #636573;
+    border-radius: 20px;
+    margin: 0 20px;
+    background-color: #323240;
+    font-size: 1.4rem;
+    font-family: 'montserrat';
+}
+.card{
+    font-family: 'Montserrat';
+    text-align: justify;
+    background-color: #323240;
+    border-radius: 20px;
+    border: 2px solid #636573;
+}
+.card-body{
+    padding: 13px;
+}
+.card-image{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 400px;
+}
+.title, .title-info, .text-card span, .text-infoMovie span{
+    color: #bbce2d;
+}
+.title{
+    font-size: 1.5rem;
+}
+.title-info{
+    font-size: 3rem;
+}
+.text-card{
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+.text-infoMovie{
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+}
+.plot{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.score{
+    width: 150px;
+    height: 50px;
+    border: 2px solid #636573;
+    border-radius: 20px;
+    display: flex;
+    margin: 35px 0;
+}
+.score div{
+    width: 50%;
+}
+.text-score{
+    text-align: center;
+    font-size: 2rem;
+    color: #bbce2d;
+}
+.div-img{
+    background-color: #636573;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.img-score {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+    width: 64px;
+}
+@media screen and (max-width: 575px){
+    .card-image{
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
