@@ -17,3 +17,12 @@ backHome = () => {
 back = () => {
     window.history.back()
 }
+
+backToTop = () => {
+    addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
+    })
+}
