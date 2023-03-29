@@ -1,0 +1,32 @@
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <% for (const movie of movies) { %>
+      <div class="col">
+      <div class="card mt-4">
+        <div class="row g-0">
+          <div class="col-sm-6">
+            <img src="<%- movie.Poster %>" alt="Poster do filme <%- movie.Title%>" class="w-100 card-image" />
+          </div>
+          <div class="col-sm-6">
+            <div class="card-body h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h2 class="title mb-4"> <%- movie.Title %> </h2>
+                <p class="text-card mb-4 plot"><span>Discrição:</span> <%- movie.Plot %> </p>
+                <% if (movie.Type == 'movie') { %>
+                  <p class="text-card"><span>Duração:</span> <%- movie.Runtime%> </p>
+                <% } else {%>
+                  <p class="text-card"><span>Temporadas:</span> <%- movie.totalSeasons%> </p>
+                <% } %>
+                <p class="text-card"><span>Lançamento:</span> <%- movie.Released%> </p>
+              </div>
+              <div>
+                <button class="btn-custom w-100" onclick="info('<%- movie.imdbID %>')">
+                  <img src="/imgs/lupa.png">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% } %>
+  </div>
