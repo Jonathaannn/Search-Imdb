@@ -37,4 +37,17 @@ const searchMovie = async (req, res) => {
     }
 }
 
-module.exports = { home, searchMovie }
+const infoMovie = async (req, res) => {
+    const imdb = req.params.imdbID
+    const url = `http://www.omdbapi.com/?apikey=6c5b1285&i=${imdb}`
+    try {
+        const movie = await axios.get(url)
+        const movieInfo = movie.data
+        res.render('infoMovie', {movieInfo})
+    } catch (error) {
+        console.log(`Erro: ${error}`)
+        res.status(500).json({Error: "Erro interno no servidor!"})
+    }
+}
+
+module.exports = { home, searchMovie, infoMovie }
