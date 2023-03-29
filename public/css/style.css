@@ -47,6 +47,10 @@ input::placeholder {
     width: 40px;
 }
 .btn-up{
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
     transform: rotate(90deg);
 }
 .input-custom {
