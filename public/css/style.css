@@ -51,6 +51,7 @@ input::placeholder {
     display: block;
     right: 0;
     bottom: 0;
+
     transform: rotate(90deg);
 }
 .input-custom {
