@@ -16,7 +16,7 @@ app.set('views', __dirname + '/views')
 app.set('view engine', 'ejs')
 
 //Iniciando rotas da aplicação
-app.use('/schImdb', routes)
+app.use('/', routes)
 
 //Iniciando servidor na porta 3000
 const port = 3000
