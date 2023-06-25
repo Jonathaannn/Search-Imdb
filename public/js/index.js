@@ -3,15 +3,15 @@ search = () => {
     if(!title) {
        return window.alert("Campo vázio!")
     }
-    window.location.href = `/schImdb/search/${title}`
+    window.location.href = `/search/${title}`
 }
 
 info = (imdbID) => {
-    window.location.href = `/schImdb/info/${imdbID}`
+    window.location.href = `/info/${imdbID}`
 }
 
 backHome = () => {
-    window.location.href = '/schImdb/'
+    window.location.href = '/'
 }
 
 back = () => {
